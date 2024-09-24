@@ -13,6 +13,8 @@
     IN  in, load;
     OUT out;
 
-    BUILTIN Bit;
-    CLOCKED in, load;
+   PARTS:
+    //// Replace this comment with your code.
+    Mux(a=dout,b=in,sel=load,out=out1);
+    DFF(in=out1,out=dout,out=out);
 }
